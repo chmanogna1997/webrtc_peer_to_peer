@@ -1,0 +1,10 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"  # For JavaScript/Node.js projects
+    directory: "/"  # Root directory of the project
+    schedule:
+      interval: "weekly"  # This checks for updates weekly
+    open-pull-requests-limit: 5  # Limit to 5 open PRs at a time
+    ignore:
+      - dependency-name: "express"
+        versions: ["4.x"]  # Ignore updates for specific versions (optional)
